@@ -1,0 +1,25 @@
+.box {
+  top: 60px;
+  width: 200px;
+  height: 200px;
+  color: black;
+  background-color: #bfc1c3;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px #888888;
+  border: 1px solid;
+}
+
+ul {
+  text-decoration: none;
+}
+
+.box p {
+  position: absolute;
+  left: 38%;
+  top: 33%;
+}
+
+li {
+  position: absolute;
+}

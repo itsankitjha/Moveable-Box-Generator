@@ -1,18 +1,23 @@
 import React from "react";
 import "./Box.css";
+const Box = (props) => {
+  var boxStyle = {
+    top: props.topVal,
+    left: props.leftVal,
+  };
 
-const Box = ({ id, topValue, leftValue, zIndex, boxClickHandler }) => {
-  const boxStyle = {
-    top: topValue,
-    left: leftValue,
+  var listItemStyle = {
+    zIndex: props.zIndex,
   };
-  const listItemStyle = {
-    zIndex: zIndex,
-  };
+
   return (
-    <li style={listItemStyle} id={id}>
-      <div style={boxStyle} onClick={(event) => boxClickHandler(event)}>
-        <p>Box {id.toString().split("item")[1]}</p>
+    <li style={listItemStyle} id={props.id}>
+      <div
+        style={boxStyle}
+        className="box"
+        onClick={(event) => props.boxClickHandler(event)}
+      >
+        <p>Box {props.id.toString().split("item")[1]}</p>
       </div>
     </li>
   );

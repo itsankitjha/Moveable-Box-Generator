@@ -3,11 +3,10 @@
   width: 200px;
   height: 200px;
   color: black;
-  background-color: #bfc1c3;
+  background-color: #4caf50;
   position: absolute;
-  border-radius: 20px;
-  box-shadow: 5px 10px 10px #888888;
-  border: 1px solid;
+  /* box-shadow: 5px 10px 10px #0d717a; */
+  border: 2px solid;
 }
 
 ul {
